@@ -38,7 +38,7 @@ namespace TEs_Physics
 
         private void createObjects()
         {
-            for (int a = 0; a < 10; a++)
+            for (int a = 0; a < 400; a++)
             {
                 var ringBoxShape = new Box(1, 1, 1);
                 ringBoxShape.ComputeInertia(1, out var ringBoxInertia);
@@ -66,7 +66,7 @@ namespace TEs_Physics
         {
             Simulation.Timestep(1 / 60f, ThreadDispatcher);
             Simulation.Bodies.GetDescription(bodyHandle, out boxDescription);
-           createObjects();
+           
 
         }
     }
