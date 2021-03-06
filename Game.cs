@@ -28,8 +28,9 @@ namespace TEs_Physics
             ThreadDispatcher = new SimpleThreadDispatcher(targetThreadCount);
 
             Simulation = Simulation.Create(bufferPool, new DemoNarrowPhaseCallbacks(), new DemoPoseIntegratorCallbacks(new Vector3(0, -10, 0)), new PositionFirstTimestepper());
-            createFloor();
             createObjects();
+            createFloor();
+            
 
             GameLoop gameloop = new GameLoop();
             gameloop.Load(this);
