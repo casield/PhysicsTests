@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "QDJk6Mzk5rHVEU8tqODZXLLXJN0LPWNEtOHLkQ6gUyOqMfV4RAnUyIMEGO1Ah/Ag7GRIk/genULI7gLPL9Mnvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Casiel\\Desktop\\ciberchico420\\C#\\QuixServer\\QuixServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Casiel\\.nuget\\packages\\bepuphysics\\2.3.0\\bepuphysics.2.3.0.nupkg.sha512",
+    "C:\\Users\\Casiel\\.nuget\\packages\\bepuutilities\\2.3.0\\bepuutilities.2.3.0.nupkg.sha512",
+    "C:\\Users\\Casiel\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Casiel\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Casiel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
