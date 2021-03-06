@@ -38,14 +38,18 @@ namespace TEs_Physics
 
         private void createObjects()
         {
-            var ringBoxShape = new Box(0.5f, 1, 3);
-            ringBoxShape.ComputeInertia(1, out var ringBoxInertia);
-            boxDescription = BodyDescription.CreateDynamic(new Vector3(), ringBoxInertia,
-                new CollidableDescription(Simulation.Shapes.Add(ringBoxShape), 0.1f),
-                new BodyActivityDescription(0.01f));
+            for (int a = 0; a < 1000; a++)
+            {
+                var ringBoxShape = new Box(0.5f, 1, 3);
+                ringBoxShape.ComputeInertia(1, out var ringBoxInertia);
+                var boxDescription = BodyDescription.CreateDynamic(new Vector3(), ringBoxInertia,
+                    new CollidableDescription(Simulation.Shapes.Add(ringBoxShape), 0.1f),
+                    new BodyActivityDescription(0.01f));
 
-            boxDescription.Pose = new RigidPose(new Vector3(1, 9, 1), new Quaternion(0, 0, 0, 1));
-           bodyHandle = Simulation.Bodies.Add(boxDescription);
+                boxDescription.Pose = new RigidPose(new Vector3(1, 9, 1), new Quaternion(0, 0, 0, 1));
+                bodyHandle = Simulation.Bodies.Add(boxDescription);
+            }
+
         }
 
         private void createFloor()
@@ -62,8 +66,8 @@ namespace TEs_Physics
         {
             Simulation.Timestep(1 / 60f, ThreadDispatcher);
             Simulation.Bodies.GetDescription(bodyHandle, out boxDescription);
-            Console.WriteLine(boxDescription.Pose.Position);
-            
+            Console.WriteLine(Simulation.Bodies.GatherPose();
+
         }
     }
 }
