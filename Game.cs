@@ -66,6 +66,7 @@ namespace TEs_Physics
         {
             Simulation.Timestep(1 / 60f, ThreadDispatcher);
             Simulation.Bodies.GetDescription(bodyHandle, out boxDescription);
+            Console.WriteLine(boxDescription.Pose.Position);
            
 
         }
